@@ -1,0 +1,447 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    background-color: #ffffff;
+    color: #332211;
+    line-height: 1.6;
+}
+.navbar{
+    z-index: 1000;
+    background-color: #6f4e37f2;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 50px;
+}
+.navbar a{
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.navbar ul a:hover{
+    color:#e28743 ;
+}
+.navbar ul{
+    list-style: none;
+}
+.navbar a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    transition: 0.5s;
+}
+.navbar ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-right: 70px;
+}
+
+@media(max-width:670px){
+    .navbar ul{
+        display: none;
+    }
+}
+.hero-section{
+    height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(#00000099,#00000099),
+    url(coffee1.jpeg) ;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #ffffff;
+}
+.hero-section p{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.hero-section h1{
+    font-size: 48px;
+    margin-bottom: 20px;
+    animation: fadein 2s ease forwards;
+}
+@media(max-width:576px){
+    .hero-section h1{
+        display: none;
+    }
+    .hero-section p{
+        font-size: 12px;
+    }
+}
+.btn{
+    background-color: #6f4e37;
+    color: #ffffff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+.btn:hover{
+    background-color: #e28743;
+}
+.feat-section{
+    background-color: #f9f9f9;
+    color: #6f4e37;
+    text-align: center;
+    padding: 80px 50px;
+}
+.feat-section h1{
+    text-align:center;
+    font-size:32px;
+    margin-bottom: 15px;
+}
+.feat-box{
+    background-color: #ffffff;
+    color: #332211;
+    width: 360px;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 4px 10px #0000000d;
+    margin: 0;
+    transition: 0.5s;
+}
+.feat-box:hover{
+    transform:translateY(-20px) ;
+}
+@media(max-width:992px){
+    .feat-box{
+        width: 48%;
+    }
+}
+@media(max-width:576px){
+    .feat-box{
+        width: 100%;
+    }
+}
+.feat-box ion-icon{
+    font-size: 48px;
+    color: #e28743;
+}
+.feat-contianer{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.about-section{
+    width: 100%;
+    padding: 80px 50px;
+    background-color: #f5f5dc;
+}
+.contianer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1100px;
+    margin: auto;
+}
+.about-img{
+    width: 48%;
+ } 
+.about-img img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    height: 400px;
+}
+.about-text{
+    width: 48%;
+    line-height: 1.6;
+}
+.about-text h2{
+    margin-bottom: 20px;
+}
+@media(max-width:992px){
+    .contianer{
+        flex-wrap: wrap;
+    }
+    .about-img{
+        width:45%;
+    }
+    .about-text{
+        width:45%;
+    }
+}
+@media(max-width:576px){
+    .about-img{
+        width:100%;
+    }
+    .about-text{
+        width:100%;
+    }
+}
+.statistics-section{
+    background-color: #6f4e37;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-around;
+    padding: 80px 50px;
+}
+@media(max-width:992px){
+    .stat-box{
+        width: 48%;
+    }
+}
+@media(max-width:576px){
+    .stat-box{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+.stat-box p{
+    font-size: 48px;
+    color: #e28743;
+    font-weight: bold;
+    text-align: center;
+}
+.stat-box h4{
+    letter-spacing: 1px;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+}
+.best-section{
+    margin: 80px 50px;
+}
+.card{
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding-bottom: 20px;
+    position: relative;
+    width: calc(25% - 23px);
+    min-width: 240px;
+}
+.card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.badge{
+    background-color: #e28743;
+    color: #ffffff;
+    padding: 6px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 4px;
+    font-family:sans-serif;
+}
+.p-contianer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card{
+    width: 22%;
+    object-fit: cover;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.164);
+    border-radius: 8px;
+    overflow: hidden;
+    padding-bottom: 14px;
+    transition: 0.5s;
+}
+.card:hover{
+    transform: translateY(-20px);
+}
+@media(max-width:992px){
+    .card{
+        width: 48%;
+    }
+}
+@media(max-width:576px){
+    .card{
+        width: 100%;
+        min-width:0;
+        margin-bottom:30px;
+    }
+}
+.card h3{
+    margin: 15px 0 10px 0;
+    font-size: 20px;
+}
+.card p{  
+    color: #6f4e37;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.card img{
+    width: 100%;
+    height: 300px;
+}
+.best-section h2{
+    text-align: center;
+    margin: 30px;
+    font-size: 32px;
+    color: #6f4e37;
+}
+.customer-section{
+    background-color: #f9f9f9;
+    color: #332211;
+    padding: 80px 50px;
+    text-align: center;
+}
+.customer-section h1{
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+.customer-contianer.star-icon{
+    display: flex;
+    align-items: center;
+}
+.star-icon ion-icon{
+    color: #f1c40f;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+.customer-contianer{
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.customer-card{
+    width: 250px;
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+@media(max-width:992px){
+    .customer-card{
+        width: 48%;
+    }
+}
+@media(max-width:576px){
+    .customer-card{
+        width: 100%;
+    }
+}
+.customer-card:hover{
+    transform: translateY(-20px);
+}
+.customer-card img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid #e28743;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.signup-section{
+    background-color: #6f4e37;
+    color: #ffffff;
+    text-align: center;
+    padding: 80px 50px;
+}
+.signup-section h2{
+    margin-bottom: 10px;
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+.signup-form{
+    background-color:#ffffff1a ;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    text-align: left;
+    margin: 30px auto;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.signup-form input{
+    width: 100%;
+    margin-bottom: 15px;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+}
+.checkbox-contianer{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.checkbox-contianer input{
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+.signup-form .btn{
+    margin-top: 10px;
+    font-weight: bold;
+    width: 100%;
+}
+.checkbox-contianer input{
+    display: block;
+}
+footer{
+    background-color: #332211;
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 20px;
+}
+.social-icons ion-icon{
+    color: #f5f5dc;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    transition:0.5s ;
+}
+.social-icons ion-icon:hover{
+    color: #e28743;
+}
+.social-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 33px;
+    margin-bottom: 10px;
+}
+@keyframes fadein{
+    from{
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
